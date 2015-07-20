@@ -1,0 +1,20 @@
+﻿@model  IdentityDemo.Models.LoginModel
+
+@{
+    ViewBag.Title = "Log In";
+}
+
+<h2>Log In</h2>
+@Html.ValidationSummary(true)
+
+@using (Html.BeginForm())
+{
+    @Html.EditorForModel()
+    <p>
+        <button type="submit">log In</button>
+    </p>
+
+    <p>
+        <a href="@Url.Action("Register", "auth")">join now</a>
+    </p>
+}

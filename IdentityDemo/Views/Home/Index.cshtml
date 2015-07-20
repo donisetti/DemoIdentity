@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<p>
+    <a href="@Url.Action("Logout", "auth")">Log Out</a>
+</p>
+
+<p>
+    Olá @CurrentUser.Nome ! Seja bem vindo :)
+</p>
+<p>
+    Como está as coisas ai no @CurrentUser.Estado ?
+</p>
+<p>
+    @CurrentUser.Idade
+</p>
